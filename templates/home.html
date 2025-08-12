@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pehnava</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero {
+            background: url("{{ url_for('static', filename='images/banner.jpg') }}") center/cover no-repeat;
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+        }
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: bold;
+        }
+        .hero p {
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="/">Pehnava</a>
+    <div>
+      <a class="nav-link text-white" href="/products">Shop</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container text-center">
+        <h1>Pehnava</h1>
+        <p>Where style meets comfort.</p>
+        <a href="/products" class="btn btn-primary btn-lg">Shop Now</a>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="py-5 bg-light">
+    <div class="container text-center">
+        <h2>Our Story</h2>
+        <p class="lead">We create high-quality, stylish, and comfortable clothing for all.  
+        Whether you’re dressing up or keeping it casual, we’ve got you covered.</p>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+    &copy; 2025 My Clothing Brand. All Rights Reserved.
+</footer>
+
+</body>
+</html>
