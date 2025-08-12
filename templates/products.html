@@ -1,31 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>WORK</title>
+    <title>Jacket Photos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-  /* Change page background */
-  body {
-    background-color: #011425; /* example: soft light blue */
-  }
-
-  /* Change navbar background */
-  .navbar {
-    background-color: #022040 !important; /* deep blue */
-  }
-
-  /* Change navbar brand text color */
-  .navbar .navbar-brand {
-    color: #078782 !important; /* bright yellow */
-    font-weight: bold;
-  }
-  h1.text-center {
-    color: #9d2ae4;
-    }
-</style>
-
+      body {
+        background-color: #000509;
+        color: white;
+      }
+      .navbar {
+        background-color: #000913 !important;
+      }
+      .navbar .navbar-brand {
+        color: #078782 !important;
+        font-weight: bold;
+      }
+      img.card-img-top {
+        cursor: pointer;
+      }
+    </style>
 </head>
-<body style="background-color: #060122;">
+<body>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
@@ -33,20 +28,13 @@
   </div>
 </nav>
 
-<div class="container py-5">
-    <h1 class="text-center mb-5">WORK</h1>
-    <div class="row">
-        <!-- Product 3 -->
-        <div class="col-md-4">
-            <div class="card shadow-sm">
-                <img src="{{ url_for('static', filename='images/jacket.png') }}" class="card-img-top" alt="Jacket">
-                <div class="card-body text-center">
-                </div>
-            </div>
-        </div>
-
-    </div>
+<div class="container py-5 text-center">
+    <a href="{{ url_for('morephoto') }}">
+      <img src="{{ url_for('static', filename='images/jacket.png') }}" class="card-img-top" alt="Jacket">
+    </a>
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
